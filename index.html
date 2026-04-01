@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMPIRE FITNESS - Elevate Your Fitness Journey</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/69/69840.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-slate-900 via-purple-900/20 to-slate-900 text-white overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4 md:py-6">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3 group cursor-pointer">
+                    <div class="w-11 h-11 bg-yellow-500 rounded-xl flex items-center justify-center group-hover:rotate-12 transition-transform duration-300 shadow-lg shadow-yellow-500/20">
+                        <i class="fas fa-bolt text-slate-900 text-xl"></i>
+                    </div>
+                    <div class="flex flex-col text-left">
+                        <span class="text-2xl font-black leading-none tracking-tighter text-white">
+    THE WAREHOUSE<span class="text-yellow-400 italic">GYM</span>
+</span>
+                        <span class="text-[10px] uppercase tracking-[0.2em] font-bold text-slate-500 leading-none mt-1">
+                            Premium Coaching
+                        </span>
+                    </div>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="hover:text-yellow-400 transition-all duration-300 font-medium">Home</a>
+                    <a href="#about" class="hover:text-yellow-400 transition-all duration-300 font-medium">About</a>
+                    <a href="#services" class="hover:text-yellow-400 transition-all duration-300 font-medium">Services</a>
+                    <a href="#testimonials" class="hover:text-yellow-400 transition-all duration-300 font-medium">Reviews</a>
+                    <a href="#contact" class="hover:text-yellow-400 transition-all duration-300 font-medium">Contact</a>
+                </div>
+
+                <!-- CTA Button -->
+                <a href="#contact" class="hidden md:block bg-gradient-to-r from-yellow-500 to-teal-500 hover:from-yellow-600 hover:to-teal-600 text-white px-8 py-3 rounded-full font-semibold shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
+                    Book Consultation
+                </a>
+
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-slate-800 transition-colors">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden pb-8 pt-4 space-y-4 border-t border-slate-800">
+                <a href="#home" class="block py-2 hover:text-yellow-400 font-medium">Home</a>
+                <a href="#about" class="block py-2 hover:text-yellow-400 font-medium">About</a>
+                <a href="#services" class="block py-2 hover:text-yellow-400 font-medium">Services</a>
+                <a href="#testimonials" class="block py-2 hover:text-yellow-400 font-medium">Reviews</a>
+                <a href="#contact" class="block py-2 hover:text-yellow-400 font-medium">Contact</a>
+                <a href="#contact" class="block w-full bg-gradient-to-r from-yellow-500 to-teal-500 hover:from-yellow-600 hover:to-teal-600 text-white px-8 py-3 rounded-full font-semibold text-center mt-4">
+                    Book Consultation
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-20 pb-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute inset-0">
+            <div class="absolute top-20 left-20 w-72 h-72 bg-yellow-500/10 rounded-full blur-3xl animate-pulse-slow"></div>
+            <div class="absolute bottom-20 right-20 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl animate-pulse-slow" style="animation-delay: 1s;"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center z-10 relative">
+            <!-- Hero Content -->
+            <div class="lg:pr-12">
+                <div class="inline-block bg-gradient-to-r from-yellow-500/20 to-teal-500/20 backdrop-blur-sm px-6 py-3 rounded-full mb-8 border border-yellow-500/30">
+                    <span class="text-yellow-400 font-semibold">🏆 #1 Personal Training in Your Area</span>
+                </div>
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-black mb-6 leading-tight bg-gradient-to-r from-white to-slate-200 bg-clip-text text-transparent">
+                    Elevate Your
+                    <span class="block bg-gradient-to-r from-yellow-400 via-teal-400 to-yellow-500 bg-clip-text text-transparent">
+                        Fitness Journey
+                    </span>
+                </h1>
+                <p class="text-xl md:text-2xl text-slate-300 mb-8 max-w-lg leading-relaxed">
+                    Transform your body and mind with personalized training programs designed by certified experts. 
+                    Results guaranteed or your money back.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contact" class="group bg-gradient-to-r from-yellow-500 to-teal-500 hover:from-yellow-600 hover:to-teal-600 text-white px-12 py-6 rounded-full font-bold text-lg shadow-2xl hover:shadow-3xl transform hover:-translate-y-2 transition-all duration-500 flex items-center justify-center">
+                        <span>Start Today</span>
+                        <i class="fas fa-arrow-right ml-3 group-hover:translate-x-2 transition-transform"></i>
+                    </a>
+                    <a href="#services" class="border-2 border-slate-700/50 hover:border-yellow-500/50 text-slate-300 hover:text-yellow-400 px-12 py-6 rounded-full font-semibold text-lg backdrop-blur-sm hover:bg-slate-800/50 transition-all duration-300">
+                        View Services
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hero Image -->
+            <div class="relative">
+                <div class="relative z-10">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                         alt="Professional trainer working with client" 
+                         class="w-full h-96 lg:h-[600px] object-cover rounded-3xl shadow-2xl">
+                    <div class="absolute -bottom-4 -right-6 w-48 h-48 bg-gradient-to-r from-yellow-500 to-teal-500 rounded-2xl shadow-2xl transform rotate-12"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-32 px-4 sm:px-6 lg:px-8 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-24">
+                <h2 class="text-5xl md:text-7xl font-black mb-6 bg-gradient-to-r from-yellow-400 via-teal-400 to-yellow-500 bg-clip-text text-transparent">
+                    Why Choose THE WAREHOUSEGYM?
+                </h2>
+                <p class="text-xl text-slate-400 max-w-2xl mx-auto">
+                    We're not just trainers. We're transformation architects with over 10 years of experience 
+                    helping 1000+ clients achieve their dream physique.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="group p-8 rounded-3xl bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 hover:border-yellow-500/50 hover:bg-slate-800/70 transition-all duration-500 hover:-translate-y-4">
+                    <div class="w-20 h-20 bg-gradient-to-r from-yellow-500 to-teal-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-certificate text-2xl text-slate-900"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Certified Experts</h3>
+                    <p class="text-slate-400 leading-relaxed">All trainers hold NASM, ACE, and ISSA certifications with advanced specializations.</p>
+                </div>
+
+                <div class="group p-8 rounded-3xl bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 hover:border-yellow-500/50 hover:bg-slate-800/70 transition-all duration-500 hover:-translate-y-4">
+                    <div class="w-20 h-20 bg-gradient-to-r from-yellow-500 to-teal-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-chart-line text-2xl text-slate-900"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Proven Results</h3>
+                    <p class="text-slate-400 leading-relaxed">98% client retention rate. Average 15lbs fat loss in first 12 weeks.</p>
+                </div>
+
+                <div class="group p-8 rounded-3xl bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 hover:border-yellow-500/50 hover:bg-slate-800/70 transition-all duration-500 hover:-translate-y-4 md:col-span-2 lg:col-span-1">
+                    <div class="w-20 h-20 bg-gradient-to-r from-yellow-500 to-teal-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-shield-alt text-2xl text-slate-900"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Risk Free</h3>
+                    <p class="text-slate-400 leading-relaxed">100% money-back guarantee if you don't see results in 30 days.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-32 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-24">
+                <h2 class="text-5xl md:text-7xl font-black mb-6 bg-gradient-to-r from-yellow-400 via-teal-400 to-yellow-500 bg-clip-text text-transparent">
+                    Training Programs
+                </h2>
+                <p class="text-xl text-slate-400 max-w-2xl mx-auto">
+                    Choose your path to greatness. Every program is customized to your goals, schedule, and fitness level.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="group p-10 rounded-3xl bg-gradient-to-b from-slate-800/80 to-slate-900/50 backdrop-blur-sm border border-slate-700/50 hover:border-yellow-500/70 hover:shadow-2xl transition-all duration-500 hover:-translate-y-6">
+                    <div class="w-24 h-24 bg-yellow-500 rounded-2xl flex items-center justify-center mb-8 mx-auto group-hover:scale-110 transition-transform shadow-2xl">
+                        <i class="fas fa-dumbbell text-3xl text-slate-900"></i>
+                    </div>
+                    <h3 class="text-3xl font-black mb-6 text-center">1-on-1 Training</h3>
+                    <p class="text-slate-300 mb-8 text-center leading-relaxed">Personalized sessions with world-class trainers. Maximum results, minimum time.</p>
+                    <div class="text-center">
+                        <span class="text-4xl font-black text-yellow-500">499 AED/mo</span>
+                        <span class="text-slate-400 ml-2">/session</span>
+                    </div>
+                </div>
+
+                <div class="group p-10 rounded-3xl bg-gradient-to-b from-slate-800/80 to-slate-900/50 backdrop-blur-sm border border-slate-700/50 hover:border-yellow-500/70 hover:shadow-2xl transition-all duration-500 hover:-translate-y-6 md:-mt-12 lg:mt-0">
+                    <div class="w-24 h-24 bg-teal-500 rounded-2xl flex items-center justify-center mb-8 mx-auto group-hover:scale-110 transition-transform shadow-2xl">
+                        <i class="fas fa-users text-3xl text-slate-900"></i>
+                    </div>
+                    <h3 class="text-3xl font-black mb-6 text-center">Small Group</h3>
+                    <p class="text-slate-300 mb-8 text-center leading-relaxed">High-energy group sessions. Same personalized attention, better value.</p>
+                    <div class="text-center">
+                        <span class="text-4xl font-black text-teal-500">299 AED/mo</span>
+                        <span class="text-slate-400 ml-2">/session</span>
+                    </div>
+                </div>
+
+                <div class="group p-10 rounded-3xl bg-gradient-to-b from-slate-800/80 to-slate-900/50 backdrop-blur-sm border border-slate-700/50 hover:border-yellow-500/70 hover:shadow-2xl transition-all duration-500 hover:-translate-y-6">
+                    <div class="w-24 h-24 bg-gradient-to-r from-yellow-500 to-teal-500 rounded-2xl flex items-center justify-center mb-8 mx-auto group-hover:scale-110 transition-transform shadow-2xl">
+                        <i class="fas fa-laptop text-3xl text-slate-900"></i>
+                    </div>
+                    <h3 class="text-3xl font-black mb-6 text-center">Online Coaching</h3>
+                    <p class="text-slate-300 mb-8 text-center leading-relaxed">24/7 access to your trainer, custom workouts, nutrition plans, and progress tracking.</p>
+                    <div class="text-center">
+                        <span class="text-4xl font-black text-yellow-500">899 AED/mo</span>
+                        <span class="text-slate-400 ml-2">/month</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-32 px-4 sm:px-6 lg:px-8 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-24">
+                <h2 class="text-5xl md:text-7xl font-black mb-6 bg-gradient-to-r from-yellow-400 via-teal-400 to-cyan-400 bg-clip-text text-transparent italic tracking-tighter">
+                    REAL RESULTS
+                </h2>
+                <p class="text-xl text-slate-400 max-w-2xl mx-auto">
+                    Don't take our word for it. See what our clients are saying.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-10 rounded-3xl bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 hover:border-yellow-500/50 transition-all duration-300">
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.unsplash.com/photo-1548690312-e3b507d17a12?auto=format&fit=crop&w=150&q=80" alt="Sarah" class="w-16 h-16 rounded-full object-cover ring-2 ring-yellow-500/20 shadow-lg">
+                        <div class="ml-4">
+                            <h4 class="font-bold text-white text-lg leading-tight">Sarah J.</h4>
+                            <p class="text-yellow-400 text-xs font-semibold uppercase tracking-wider">Verified Transformation</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-300 italic mb-6">"The personalized coaching at EMPIRE FITNESS completely changed my lifestyle. I gained the strength and confidence I never knew I had."</p>
+                    <div class="flex space-x-1 text-yellow-400">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="p-10 rounded-3xl bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 hover:border-yellow-500/50 transition-all duration-300">
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=150&q=80" alt="Mike" class="w-16 h-16 rounded-full object-cover ring-2 ring-yellow-500/20 shadow-lg">
+                        <div class="ml-4">
+                            <h4 class="font-bold text-white text-lg leading-tight">Mike R.</h4>
+                            <p class="text-yellow-400 text-xs font-semibold uppercase tracking-wider">Elite Athlete</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-300 italic mb-6">"I've trained at many gyms, but the community and equipment here are unmatched. My performance has skyrocketed."</p>
+                    <div class="flex space-x-1 text-yellow-400">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="p-10 rounded-3xl bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 hover:border-yellow-500/50 transition-all duration-300">
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&q=80" alt="Emily" class="w-16 h-16 rounded-full object-cover ring-2 ring-yellow-500/20 shadow-lg">
+                        <div class="ml-4">
+                            <h4 class="font-bold text-white text-lg leading-tight">Emily T.</h4>
+                            <p class="text-yellow-400 text-xs font-semibold uppercase tracking-wider">Lifestyle Member</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-300 italic mb-6">"The atmosphere is so motivating. I actually look forward to my workouts now. Best part of my day!"</p>
+                    <div class="flex space-x-1 text-yellow-400">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-32 px-4 sm:px-6 lg:px-8 bg-slate-900">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-gradient-to-br from-slate-800 to-slate-900 p-12 rounded-3xl border border-slate-700 relative overflow-hidden">
+                <div class="relative z-10 text-center">
+                    <h2 class="text-4xl font-black text-white mb-4">READY TO TRANSFORM?</h2>
+                    <p class="text-slate-400 mb-8">Book your free 15-minute consultation and start your journey today.</p>
+                    
+                    
+                    <form action="https://formspree.io/f/xlgojron" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <input type="text" name="name" placeholder="Your Name" required class="bg-slate-800/50 border border-slate-700 rounded-xl px-4 py-4 text-white placeholder-slate-500 focus:outline-none focus:border-yellow-500 transition-colors">
+    <input type="email" name="email" placeholder="Email Address" required class="bg-slate-800/50 border border-slate-700 rounded-xl px-4 py-4 text-white placeholder-slate-500 focus:outline-none focus:border-yellow-500 transition-colors">
+    <button type="submit" class="md:col-span-2 bg-yellow-500 text-slate-900 font-bold py-4 rounded-xl hover:bg-yellow-400 transition-all shadow-lg shadow-yellow-500/20">
+        SEND REQUEST
+    </button>
+</form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-slate-800 text-center">
+        <p class="text-slate-500 text-sm">© 2026 EMPIRE FITNESS. All rights reserved.</p>
+    </footer>
+<a href="https://wa.me/923112474946?text=Interested%20in%20The%20Warehouse%20Gym%20Dubai%20Membership" 
+       target="_blank" 
+       class="fixed bottom-8 right-8 bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-[9999] group">
+        <i class="fab fa-whatsapp text-3xl"></i>
+        <span class="absolute right-20 bg-slate-800 text-white px-4 py-2 rounded-lg text-sm opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+            Chat with us!
+        </span>
+    </a>
+</body>
+</html>
+
